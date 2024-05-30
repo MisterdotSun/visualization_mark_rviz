@@ -1,0 +1,16 @@
+<launch>
+
+    <!-- <node pkg="visualization_pkg" type="visual01_points" name="visual01_points" output="screen" /> -->
+
+    <!-- 综合应用 -->
+    <node pkg="visualization_pkg" type="visual02_points" name="visual02_points" output="screen" />
+
+    <!-- <node pkg="visualization_pkg" type="visul02_line_strip" name="visul02_line_strip" output="screen" /> -->
+
+    <!-- <node pkg="visualization_pkg" type="visul03_line_list" name="visul03_line_list" output="screen" /> -->
+
+    <!-- <node pkg="visualization_pkg" type="visul04_text" name="visul04_text" output="screen" /> -->
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find visualization_pkg)/config/shh_rviz.rviz" output="screen" />
+    
+</launch>
